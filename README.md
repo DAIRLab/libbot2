@@ -78,6 +78,11 @@ cmake -DCMAKE_INSTALL_PREFIX=/path/to/libbot2/install ../libbot2
 make install
 ```
 
+[Stephen] CMake command used
+```
+cmake  -DPYTHON_EXECUTABLE=$(which python3) -DLCM_PYTHON_DIR_HINTS=~/.local/lib/python3.10/site-packages -DCMAKE_POLICY_VERSION_MINIMUM=3.5       ../libbot
+```
+
 ## Use
 
 CMakeLists.txt:
