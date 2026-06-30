@@ -55,14 +55,9 @@ dependencies for all sub-projects to your system:
 
 [scripts/setup/mac/install_prereqs](https://github.com/RobotLocomotion/libbot2/tree/drake/scripts/setup/mac)
 
-#### Ubuntu 18.04 "Bionic"
+#### Ubuntu 24.04 "Noble"
 
-[scripts/setup/linux/ubuntu/bionic/install_prereqs](https://github.com/RobotLocomotion/libbot2/tree/drake/scripts/setup/linux/ubuntu/bionic)
-
-#### Ubuntu 20.04 "Focal"
-
-[scripts/setup/linux/ubuntu/focal/install_prereqs](https://github.com/RobotLocomotion/libbot2/tree/drake/scripts/setup/linux/ubuntu/focal)
-
+[scripts/setup/linux/ubuntu/noble/install_prereqs](https://github.com/DAIRLab/libbot2/tree/bibit/fixes-for-24.04/scripts/setup/linux/ubuntu/noble)
 
 You will also need to manually install LCM from <https://lcm-proj.github.io/>.
 
@@ -75,11 +70,6 @@ cd libbot2-build
 export CMAKE_POLICY_VERSION_MINIMUM=3.5
 cmake -DCMAKE_INSTALL_PREFIX=/path/to/libbot2/install ../libbot2
 make install
-```
-
-[Stephen] CMake command used
-```
-cmake  -DPYTHON_EXECUTABLE=$(which python3) -DLCM_PYTHON_DIR_HINTS=~/.local/lib/python3.10/site-packages -DCMAKE_POLICY_VERSION_MINIMUM=3.5       ../libbot
 ```
 
 ## Use
