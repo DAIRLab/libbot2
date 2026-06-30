@@ -1,7 +1,5 @@
 # RobotLocomotion Fork of libbot2
 
-![CI](https://github.com/RobotLocomotion/libbot2/workflows/CI/badge.svg)
-
 The libbot2 project provides a set of libraries, tools, and algorithms that are
 designed to facilitate robotics research. Among others, these include
 convenience functions for maintaining coordinate transformations, tools for
@@ -74,6 +72,7 @@ You will also need to manually install LCM from <https://lcm-proj.github.io/>.
 git clone --branch drake https://github.com/RobotLocomotion/libbot2.git
 mkdir libbot2-build
 cd libbot2-build
+export CMAKE_POLICY_VERSION_MINIMUM=3.5
 cmake -DCMAKE_INSTALL_PREFIX=/path/to/libbot2/install ../libbot2
 make install
 ```
@@ -88,7 +87,7 @@ cmake  -DPYTHON_EXECUTABLE=$(which python3) -DLCM_PYTHON_DIR_HINTS=~/.local/lib/
 CMakeLists.txt:
 
 ```cmake
-cmake_minimum_required(VERSION 3.1 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 
 # ...
 
