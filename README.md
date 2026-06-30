@@ -64,7 +64,7 @@ You will also need to manually install LCM from <https://lcm-proj.github.io/>.
 ## Build and Install
 
 ```
-git clone --branch drake https://github.com/RobotLocomotion/libbot2.git
+git clone --branch bibit/fixes-for-24.04 https://github.com/DAIRLab/libbot2.git
 mkdir libbot2-build
 cd libbot2-build
 export CMAKE_POLICY_VERSION_MINIMUM=3.5
